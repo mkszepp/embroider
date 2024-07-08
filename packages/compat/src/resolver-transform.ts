@@ -1174,7 +1174,7 @@ function isData(path: any) {
   if (!path) return;
 
   if ('head' in path) {
-    return path.head.type === 'VarHead';
+    return path.head.type === 'AtHead';
   }
 
   return path.data === true;
