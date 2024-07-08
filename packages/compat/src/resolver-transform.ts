@@ -1188,7 +1188,7 @@ function tailOf(path: any) {
   if (!path) return;
 
   console.log(path.tail, path.parts);
-  console.log(path.tail.length, path.parts.length);
+  console.log(path.tail.length, path.parts.length, path.original);
 
   return 'tail' in path ? path.tail : path.parts;
 }
