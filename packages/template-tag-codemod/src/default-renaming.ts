@@ -11,9 +11,8 @@ export default function defaultRenaming(
   }
 
   // Strip off :: namespacing
-  parts = name.split('::');
-  if (parts.length > 1) {
-    name = parts[parts.length - 1];
+  if (name.includes('::')) {
+    name = name.replace(/::/, '');
   }
 
   if (htmlTagNames.includes(name)) {
